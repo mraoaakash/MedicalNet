@@ -96,6 +96,12 @@ def train(data_loader, model, optimizer, scheduler, total_epochs, save_interval,
 
 
 if __name__ == '__main__':
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+        print("working on gpu")
+    else:
+        device = torch.device("cpu")
+        print("working on cpu")
     # settting
     sets = parse_opts()   
     if sets.ci_test:
