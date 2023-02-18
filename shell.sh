@@ -1,1 +1,1 @@
-python test.py --gpu_id 0 --resume_path trails/models/resnet_50_epoch_110_batch_0.pth.tar --img_list brats_2021/t1.txt  --data_root brats_2021/t1.txt  
+python train.py --gpu_id 0 --img_list = './brats_2021/t1.txt' --data_root = './brats_2021/images_t1' --pretrain_path = './pretrain/resnet_101.pth'
