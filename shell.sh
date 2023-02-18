@@ -1,1 +1,1 @@
-python train.py --gpu_id 0 --img_list './brats_2021/images_flair.txt' --data_root './brats_2021/images_flair' --pretrain_path './pretrain/resnet_101.pth' --num_workers 0 --batch_size 2
+python train.py --gpu_id 0 --img_list './brats_2021/images_flair.txt' --data_root './brats_2021/images_flair' --pretrain_path './pretrain/resnet_101.pth' --num_workers 0 --batch_size 1
