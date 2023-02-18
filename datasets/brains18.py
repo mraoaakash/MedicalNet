@@ -41,6 +41,8 @@ class BrainS18Dataset(Dataset):
             ith_info = self.img_list[idx].split(" ")
             img_name = os.path.join(self.root_dir, ith_info[0])
             label_name = os.path.join(self.root_dir, ith_info[1])
+            print(img_name)
+            print(label_name)
             assert os.path.isfile(img_name)
             assert os.path.isfile(label_name)
             img = nibabel.load(img_name)  # We have transposed the data from WHD format to DHW
