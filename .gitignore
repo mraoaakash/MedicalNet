@@ -123,7 +123,8 @@ dmypy.json
 .pyre/
 
 # My configurations:
-data/**/*.nii.gz
-data/**/*.txt
-pretrain/**/*.pth
-trails/**/*.pth
+data
+data
+pretrain
+trails
+
